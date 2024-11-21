@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <>
         <Header/>
-        <div className="container mt-5">
+        <div className="container mt-5 pizzacont">
             <div className="row">
         {pizzas.map((pizza) => (
             <div className="col-md-4" key={pizza.id}>
