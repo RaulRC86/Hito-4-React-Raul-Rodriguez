@@ -17,18 +17,22 @@ const Home = () => {
     }, [])
     return (
       <>
-   <div className="pizzaContainer">
+      <div className="container mt-4">
+        <div className="row">
       {pizzas.map(
         (pizza) => (
+          <div className="col" key={pizza.id}>
           <CardPizza
-          key={pizza.id}
           name={pizza.name}
           img={pizza.img}
           ingredients={pizza.ingredients}
           price={pizza.price}
           />
+          </div>
         )
-      )}</div>
+      )}
+      </div>
+      </div>
       </>
     )
   }

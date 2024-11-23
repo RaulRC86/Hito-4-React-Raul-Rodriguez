@@ -12,7 +12,7 @@ const Pizza = () => {
     const consultaApi = async () => {
       const res = await fetch(backEnd)
       const data= await res.json()
-      setPizzas(data) 
+      setPizzas([data]) 
     }
     consultaApi()
   }, [])
