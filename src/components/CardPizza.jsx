@@ -12,7 +12,7 @@ const CardPizza = ({ name, desc, img, ingredients, price }) => {
           <li key={index} className="list-group-item">{ingredient}</li>
         ))}
       </ul>
-      <p className="mt-3 fw-bold">Precio: ${price}</p>
+      <p className="mt-1 fw-bold">Precio: ${price}</p>
       <a href="#" className="btn btn-light">Ver más 👀</a>
       <a href="#" className="btn btn-dark">Añadir 🛒</a>
       </div>
